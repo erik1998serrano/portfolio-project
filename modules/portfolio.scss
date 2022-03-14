@@ -1,4 +1,6 @@
-@use "./../partials/palette";
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../mixins/mixins";
 
 .portfolio {
     grid-area: portfolio;
@@ -14,7 +16,7 @@
     }
     &__image {
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
     &__desc {
         padding: 15px;
@@ -27,19 +29,28 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@include mixins.phone {
     .portfolio {
         &__responsive {
+            padding: 0 6px;
+            float: left;
             width: 100%;
-            margin: 6px 0;
         }
     }
 }
 
-@media only screen and (max-width: 992px) {
+@include mixins.tablet {
     .portfolio {
         &__responsive {
             width: 49.99999%;
+        }
+    }
+}
+
+@include mixins.laptop {
+    .portfolio {
+        &__responsive {
+            width: 24.99999%;
             margin: 6px 0;
         }
     }

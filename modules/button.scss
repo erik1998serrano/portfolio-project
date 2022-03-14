@@ -1,4 +1,6 @@
-@use "./../partials/palette";
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../mixins/mixins";
 
 .button {
     background-color: transparent;
@@ -43,7 +45,7 @@
     background-color: palette.$primary;
 }
 
-@media (min-width: 768px) {
+@include mixins.tablet {
     .button {
         padding: 16px 32px;
     }

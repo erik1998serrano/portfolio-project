@@ -1,3 +1,8 @@
+zero-pm, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
   background: #1f1f1f;
   overflow: hidden;
@@ -25,14 +30,14 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar--hidden {
     display: none;
   }
 }
 .socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: end;
   align-items: center;
   padding: 0 1rem;
@@ -82,16 +87,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
   h1 {
-    font-size: 10em;
+    font-size: 6em;
     padding: 0;
     margin: 0;
   }
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   h1 {
     font-size: 6em;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 10em;
     padding: 0;
     margin: 0;
   }
@@ -111,6 +123,7 @@
   display: inline-block;
   top: 100px;
   left: 32%;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -152,7 +165,7 @@
 }
 .portfolio__image {
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 .portfolio__desc {
   padding: 15px;
@@ -164,15 +177,21 @@
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .portfolio__responsive {
+    padding: 0 6px;
+    float: left;
     width: 100%;
-    margin: 6px 0;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .portfolio__responsive {
     width: 49.99999%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .portfolio__responsive {
+    width: 24.99999%;
     margin: 6px 0;
   }
 }
@@ -192,6 +211,16 @@
   background: #1f1f1f;
   padding: 1rem;
   text-align: center;
+}
+#contactMe a:link {
+  color: #ffffff;
+}
+#contactMe a:visited {
+  color: #ffffff;
+}
+#contactMe a:hover {
+  color: #bb86fc;
+  cursor: pointer;
 }
 
 #contactForm {
@@ -272,7 +301,38 @@
   grid-template-areas: "header header" "about about-cloud" "portfolio portfolio" "contact-me contact-form";
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    padding: 1rem 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas: "header" "header" "about" "about-cloud" "portfolio" "portfolio" "contact-me" "contact-form";
+  }
+
+  .about-container {
+    display: grid;
+    padding: 1rem 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas: "about" "about-cloud";
+  }
+
+  .contact-container {
+    display: grid;
+    padding: 1rem 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas: "contact-me" "contact-form";
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     display: grid;
     padding: 1rem 5rem;
@@ -346,7 +406,7 @@
   background-color: #bb86fc;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .button {
     padding: 16px 32px;
   }
@@ -364,15 +424,11 @@ body {
 h2 {
   font-size: 4em;
   color: #bb86fc;
-  padding: 0;
-  margin: 0;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
-  padding: 0;
-  margin: 0;
 }
 
 .background-text {

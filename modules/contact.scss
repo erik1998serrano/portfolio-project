@@ -1,4 +1,6 @@
-@use "./../partials/palette";
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../mixins/mixins";
 
 #contactMe {
     grid-area: contact-me;
@@ -6,6 +8,16 @@
     background: palette.$background-overlay;
     padding: 1rem;
     text-align: center;
+    a:link {
+        color: palette.$on-surface;
+    }
+    a:visited {
+        color: palette.$on-surface;
+    }
+    a:hover {
+        color: palette.$primary;
+        cursor: pointer;
+    }
 }
 
 #contactForm {

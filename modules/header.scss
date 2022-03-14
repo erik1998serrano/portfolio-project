@@ -1,4 +1,6 @@
-@use "./../partials/palette";
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../mixins/mixins";
 
 .header {
     grid-area: header;
@@ -18,17 +20,25 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@include mixins.phone {
     h1 {
-        font-size: 10em;
+        font-size: 6em;
         padding: 0;
         margin: 0;
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@include mixins.tablet {
     h1 {
         font-size: 6em;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@include mixins.laptop {
+    h1 {
+        font-size: 10em;
         padding: 0;
         margin: 0;
     }

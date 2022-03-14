@@ -1,4 +1,6 @@
-@use "./../partials/palette";
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../mixins/mixins";
 
 .navbar {
     background: palette.$background-overlay;
@@ -28,7 +30,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@include mixins.tablet {
     .navbar {
         &--hidden {
             display: none;
@@ -38,7 +40,7 @@
 
 .socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: end;
     align-items: center;
     padding: 0 1rem;

@@ -5,6 +5,7 @@
 @use "./modules/contact.scss";
 @use "./modules/container.scss";
 @use "./modules/button.scss";
+@use "./mixins/mixins";
 @use "./partials/palette";
 @use "./partials/typography";
 
@@ -13,7 +14,7 @@
 }
 
 body {
-    typography.$headers
+    font-family: typography.$headers;
     color: palette.$on-surface;
     background: palette.$background;
 }
@@ -21,19 +22,17 @@ body {
 h2 {
     font-size: 4em;
     color: palette.$primary;
-    padding: 0;
-    margin: 0;
+    @extend zero-pm;
 }
 
 p {
-    typography.$text
+    font-family: typography.$text;
     font-size: 1.5em;
-    padding: 0;
-    margin: 0;
+    @extend zero-pm;
 }
 
 .background-text {
-    typography.$bg-text;
+    font-family: typography.$bg-text;
     color: #383838;
     font-size: 24px;
     user-select: none;

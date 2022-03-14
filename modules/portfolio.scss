@@ -1,0 +1,56 @@
+@use "./../partials/palette";
+
+.portfolio {
+    grid-area: portfolio;
+    border-radius: 10px;
+    background: palette.$background-overlay;
+    padding: 1rem;
+    &__gallery {
+        background-color: #2a2a2a;
+        border-radius: 5px;
+    }
+    &__gallery:hover {
+        box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    }
+    &__image {
+        width: 100%;
+        height: 200px;
+    }
+    &__desc {
+        padding: 15px;
+        text-align: center;
+    }
+    &__responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        &__responsive {
+            width: 100%;
+            margin: 6px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .portfolio {
+        &__responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+}
+
+.portfolio-container {
+    display: grid;
+    padding: 1rem 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas: "portfolio";
+}

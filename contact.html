@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Caveat&family=Roboto:wght@100&display=swap"> 
+        <title>erik | contact.</title>
+    </head>
+    <body>
+        <header class="primary-header">
+            <!-- navbar -->
+            <nav class="navbar">
+                <ul class="navbar--flex">
+                    <li class="navbar__list">
+                        <a href="index.html">home</a>
+                    </li>
+                <div class="navbar--flex navbar--hidden">
+                    <li class="navbar__list">
+                            <a href="about.html">about</a>
+                    </li>
+                    <li class="navbar__list">
+                        <a href="portfolio.html">my portfolio</a>
+                    </li>
+                    <li class="navbar__list">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </div>
+                    <!-- socials section with linkedin/github image/link -->
+                <div class="socials">
+                    <li id="linkedin" class="navbar__list" onclick=window.open("https://www.linkedin.com/in/erik-serrano");>
+                    </li>
+                    <li id="github" class="navbar__list" onclick=window.open("https://github.com/erik1998serrano");>
+                    </li>
+                </div>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contact-container">
+            <section id="contactMe">
+                <div class="background-text">&#8249;h2&#8250;</div><h2>Contact me.</h2><div class="background-text">&#8249;h2/&#8250;</div>
+    
+                <div class="background-text">&#8249;p&#8250;</div><p>
+                    I'm interested in any opportunity - especially ambitious or
+                    large projects. However, if you have any other request or
+                    question, don't hesitate to use the form or e-mail me at<a href = "mailto:erik1998serrano@outlook.com?subject = New Project&body = Message">
+                        erik1998serrano@outlook.com
+                        </a>
+                </p><div class="background-text">&#8249;p/&#8250;</div>
+            </section>
+    
+            <!-- contact form section -->
+            <section id="contactForm">
+                <div class="background-text">&#8249;form&#8250;</div>
+                <div class="form">
+                    <form>
+                        <input type="text" name="field1" placeholder="Full Name" />
+                        <input type="email" name="field2" placeholder="Email" />
+                        <input type="url" name="field3" placeholder="Subject" />
+                        <textarea class="form__textarea" placeholder="Message"></textarea>
+                        <br>
+                        <br>
+                        <div>
+                            <button class="button" role="button">Send Message</button>
+                        </div>
+                      </form>
+                  </div>
+                  <div class="background-text">&#8249;form/&#8250;</div>
+            </section>
+        </div>
+    </body>

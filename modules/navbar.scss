@@ -1,0 +1,74 @@
+@use "./../partials/palette";
+
+.navbar {
+    background: palette.$background-overlay;
+    overflow: hidden;
+    &__list {
+        font-size: 1.5em;
+        list-style: none;
+        text-decoration: none;
+        padding: 0 1rem;
+    }
+    &--flex {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: palette.$on-surface;
+    }
+    a:visited {
+        color: palette.$on-surface;
+    }
+    a:hover {
+        color: palette.$primary;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        &--hidden {
+            display: none;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0 0 0 3rem;
+}
+
+#linkedin {
+    background-image: url("./assets/linkedin.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+#linkedin:hover {
+    background-image: url("./assets/linkedin-hover.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+#github {
+    background-image: url("./assets/github.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+#github:hover {
+    background-image: url("./assets/github-hover.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}

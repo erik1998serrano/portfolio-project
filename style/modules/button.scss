@@ -1,0 +1,48 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.button {
+    background-color: transparent;
+    border: 1px solid palette.$primary;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: palette.$black;
+    font-size: 1.5em;
+    line-height: 24px;
+    padding: 16px 23px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    z-index: 9999;
+}
+
+.button:hover,
+.button:active {
+    outline: 0;
+}
+
+.button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button:before {
+    background-color: #ddc3fd;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+.button:hover:before {
+    background-color: palette.$primary;
+}

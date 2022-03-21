@@ -1,0 +1,29 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me {
+    text-align: center;
+}
+
+#mail:hover {
+    content: url("../assets/logos/mail-hover.png");
+}
+
+.mail-link {
+    display: flex;
+    justify-content: center;
+}
+
+#mailText {
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.navbar {
+    background: palette.$background-overlay;
+    color: palette.$white;
+    margin: 0 0 1rem 0;
+}
+
+.nav-item {
+    font-family: typography.$headers;
+    font-size: 1.5em;
+}

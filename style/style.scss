@@ -1,0 +1,37 @@
+@use "./modules/navbar.scss";
+@use "./modules/header.scss";
+@use "./modules/about.scss";
+@use "./modules/portfolio.scss";
+@use "./modules/contact.scss";
+@use "./modules/button.scss";
+@use "./partials/palette";
+@use "./partials/typography";
+
+body {
+    font-family: typography.$headers;
+    background: palette.$background;
+}
+
+h2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: palette.$primary;
+}
+
+p {
+    font-family: typography.$text;
+    font-size: 1em;
+    color: white;
+}
+
+.container {
+    background: palette.$background-overlay;
+    border-radius: 20px;
+}
+
+.bg-text {
+    font-family: typography.$bg-text;
+    font-size: 24px;
+    color: #383838;
+    user-select: none;
+}

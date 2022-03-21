@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Caveat&family=Roboto:wght@100&display=swap"
+        />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <title>erik | junior full-stack dev.</title>
+    </head>
+    <body>
+        <header>
+            <!-- navbar -->
+            <nav class="navbar fixed-top navbar-expand navbar-dark">
+                <div class="collapse navbar-collapse justify-content-start">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a
+                                class="navbar-brand"
+                                href="https://www.linkedin.com/in/erik-serrano/"
+                            >
+                                <img
+                                    id="linkedIn"
+                                    src="/assets/logos/linkedin-white.png"
+                                    width="30"
+                                    height="30"
+                                    alt="LinkedIn"
+                                />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="navbar-brand"
+                                href="https://github.com/erik1998serrano"
+                            >
+                                <img
+                                    id="gitHub"
+                                    src="\assets\logos\github-white.png"
+                                    width="30"
+                                    height="30"
+                                    alt="GitHub"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid">
+            <!-- HEADER SECTION -->
+            <div class="row mt-5 pt-5">
+                <div class="col-lg">
+                    <section id="home" class="header container vh-100">
+                        <h1>
+                            <div class="bg-text">&#8249;h1&#8250;</div>
+                            <div>Hi,</div>
+                            <!-- my name (gradient design on "Erik") -->
+                            <div>
+                                My name is
+                                <span class="name-gradient">Erik</span>,
+                            </div>
+                            <div id="hideText">junior web-developer.</div>
+                            <div class="bg-text">&#8249;h1/&#8250;</div>
+                        </h1>
+
+                        <div class="bg-text">&#8249;p&#8250;</div>
+                        <p>
+                            Full Stack Developer in-training based in Melbourne.
+                        </p>
+                        <div class="bg-text">&#8249;p/&#8250;</div>
+
+                        <div
+                            class="header-button"
+                            onclick="window.location.href='#contact';"
+                        >
+                            <button class="button" role="button">
+                                Contact Me
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- ABOUT SECTION -->
+            <div class="row mt-5 pt-5">
+                <div class="col-lg-6">
+                    <div class="col-lg-12">
+                        <section id="about" class="container vh-100">
+                            <div class="bg-text">&#8249;h2&#8250;</div>
+                            <h2>About me.</h2>
+                            <div class="bg-text">&#8249;h2/&#8250;</div>
+
+                            <div class="bg-text">&#8249;p&#8250;</div>
+                            <p>
+                                My passion for technology began at a young age
+                                when I first picked up a Game Boy Color. I have
+                                always had a fascination with coding and took it
+                                up as a hobby throughout my school years.
+                                Through _nology, I have built experience across
+                                web development, UI/UX design, website and
+                                project management.
+                            </p>
+                            <div class="bg-text">&#8249;p/&#8250;</div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- WORD CLOUD -->
+                <div class="col-lg-6">
+                    <div class="col-lg-12">
+                        <section class="container vh-100 about-cloud">
+                            <span class="Sphere"></span>
+
+                            <div class="cloud">
+                                <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+                                <script>
+                                    const Texts = [
+                                        "JS",
+                                        "CSS",
+                                        "SCSS",
+                                        "HTML",
+                                        "git",
+                                        "Java",
+                                        "ReactJS",
+                                        "SpringBoot",
+                                        "SQL",
+                                        "mySQL",
+                                        "Firebase",
+                                        "FireStore",
+                                        "AWS",
+                                    ];
+
+                                    var tagCloud = TagCloud(".Sphere", Texts, {
+                                        // Sphere radius in px
+                                        radius: 300,
+
+                                        // animation speed
+                                        // slow, normal, fast
+                                        maxSpeed: "fast",
+                                        initSpeed: "fast",
+
+                                        // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
+                                        direction: 135,
+
+                                        // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+                                        keep: true,
+                                    });
+
+                                    // Giving color to each text in sphere
+                                    var color = "white";
+                                    document.querySelector(
+                                        ".Sphere",
+                                    ).style.color = color;
+                                </script>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PORTFOLIO SECTION -->
+            <div class="row mt-5 pt-5">
+                <div class="col m-1">
+                    <section id="portfolio" class="portfolio container vh-100">
+                        <div class="bg-text">&#8249;h2&#8250;</div>
+                        <h2>My Portfolio.</h2>
+                        <div class="bg-text">&#8249;h2/&#8250;</div>
+
+                        <div class="bg-text">&#8249;p&#8250;</div>
+                        <p>
+                            The below projects were built during my course with
+                            _nology.
+                        </p>
+                        <div class="bg-text">&#8249;p/&#8250;</div>
+
+                        <div class="bg-text">&#8249;section&#8250;</div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <a
+                                        href="https://github.com/erik1998serrano"
+                                    >
+                                        <img
+                                            src="../assets/logos/image-solid.svg"
+                                            alt="placeholder"
+                                            style="width: 100%"
+                                        />
+                                        <div class="caption">
+                                            <p>description</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-text">&#8249;section/&#8250;</div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- CONTACT SECTION -->
+            <div class="row mt-5 pt-5">
+                <div class="col m-1">
+                    <section id="contact" class="container vh-100">
+                        <div class="bg-text">&#8249;h2&#8250;</div>
+                        <h2 class="contact-me">Contact me.</h2>
+                        <div class="bg-text">&#8249;h2/&#8250;</div>
+                        <div class="bg-text">&#8249;p&#8250;</div>
+                        <p id="mailText">
+                            I'm interested in any opportunity - especially
+                            ambitious or large projects. However, if you have
+                            any other request or questions, don't hesitate to
+                            contact me.
+                        </p>
+                        <div class="bg-text">&#8249;p/&#8250;</div>
+                        <div class="bg-text">&#8249;img&#8250;</div>
+                        <a
+                            class="mail-link"
+                            href="mailto:erik1998serrano@outlook.com?subject = New Project&body = Message"
+                        >
+                            <img
+                                id="mail"
+                                src="../assets/logos/mail-white.png"
+                            />
+                        </a>
+                        <div class="bg-text">&#8249;img/&#8250;</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

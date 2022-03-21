@@ -1,0 +1,50 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+h1 {
+    font-family: typography.$headers;
+    font-size: 8em;
+    font-weight: bold;
+    color: white;
+}
+
+.header-button {
+    padding-top: 20px;
+}
+
+.name-gradient {
+    background: -webkit-linear-gradient(palette.$secondary, palette.$primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@include media-breakpoint-down(xs) {
+    h1 {
+        font-size: 8em;
+        font-weight: bold;
+    }
+    #hideText {
+        display: none;
+    }
+}
+
+@include media-breakpoint-between(sm, xl) {
+    h1 {
+        font-size: 10em;
+        font-weight: bold;
+    }
+}
+
+#hideText {
+    display: block;
+}

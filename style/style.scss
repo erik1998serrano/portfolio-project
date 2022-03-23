@@ -30,6 +30,15 @@ p {
 }
 
 .bg-text {
+    text-align: left;
+    font-family: typography.$bg-text;
+    font-size: 24px;
+    color: #383838;
+    user-select: none;
+}
+
+.bg-text {
+    align-self: left;
     font-family: typography.$bg-text;
     font-size: 24px;
     color: #383838;

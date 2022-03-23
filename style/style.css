@@ -9,6 +9,14 @@
   font-size: 1.5em;
 }
 
+#linkedIn:hover {
+  content: url("../assets/logos/linkedin-hover.png");
+}
+
+#gitHub:hover {
+  content: url("../assets/logos/github-hover.png");
+}
+
 h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 8em;

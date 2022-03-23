@@ -14,3 +14,11 @@
     font-family: typography.$headers;
     font-size: 1.5em;
 }
+
+#linkedIn:hover {
+    content: url("../assets/logos/linkedin-hover.png");
+}
+
+#gitHub:hover {
+    content: url("../assets/logos/github-hover.png");
+}

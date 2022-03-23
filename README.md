@@ -1,8 +1,8 @@
 # Portfolio Project
 
-Hi! I'm Erik, Full-Stack software developer currently in-training with \_nology. This is my first iteration of my portfolio, created within the first 3 weeks of the program.
+Hi! I'm Erik, Full-Stack software developer currently in-training with \_nology. This is the first iteration of my portfolio, created within the first 3 weeks of the program.
 
-![alt text](https://i.gyazo.com/057418bbc8350b41ae14c419756b4d7a.png "screenshot-1")
+![alt text](https://i.gyazo.com/90f449d22ae9d38b954a1e60736b7f33.png "screenshot-1")
 
 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/erik-serrano) || erik1998serrano@outlook.com
 

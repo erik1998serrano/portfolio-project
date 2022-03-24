@@ -69,6 +69,18 @@ h1 {
   text-align: center;
 }
 
+#portrait {
+  height: auto;
+  width: 50%;
+  padding: 0;
+}
+
+h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  text-align: center;
+}
+
 .cloud {
   display: inline-block;
   top: 100px;

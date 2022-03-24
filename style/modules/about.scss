@@ -13,6 +13,18 @@
     text-align: center;
 }
 
+#portrait {
+    height: auto;
+    width: 50%;
+    padding: 0;
+}
+
+h4 {
+    font-family: typography.$headers;
+    color: white;
+    text-align: center;
+}
+
 .cloud {
     display: inline-block;
     top: 100px;

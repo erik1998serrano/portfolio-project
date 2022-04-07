@@ -2,7 +2,7 @@
 
 Hi! I'm Erik, Full-Stack software developer currently in-training with \_nology. This is the first iteration of my portfolio, created within the first 3 weeks of the program.
 
-🔗 [Live Link](https://erikryan-s.github.io/portfolio-project/)
+🔗 [Live Demo](https://erikryan-s.github.io/portfolio-project/)
 
 ![alt text](https://i.gyazo.com/90f449d22ae9d38b954a1e60736b7f33.png "screenshot-1")
 
